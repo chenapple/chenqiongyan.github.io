@@ -17,6 +17,6 @@ Don't hesitate to contact me if you're interested in discussing my work or explo
 
 Recent News
 ======
-**Aug 2024**: My paper has been accepted by Ubicomp/IMWUT'24. I’m looking forward to connecting with you in Melbourne 🐨 from 7-9 October！
+***Aug 2024**: My paper has been accepted by Ubicomp/IMWUT'24. I’m looking forward to connecting with you in Melbourne 🐨 from 7-9 October！
 
 
