@@ -8,7 +8,7 @@
 
 # Basic Site Settings
 locale                   : "en-US"
-title                    : "Qiongyan's Personal Website"
+title                    : "About Me"
 title_separator          : "-"
 name                     : &Qiongyan Chen"
 description              : &description "personal description"
@@ -24,7 +24,7 @@ author:
   avatar           : "profile.png"
   name             : "Qiongyan Chen"
   pronouns         : "she/her" # example: "she/her"  
-  bio              : "Short biography for the left-hand sidebar"
+ # bio              : "Short biography for the left-hand sidebar"
   location         : "China"
   employer         : "The Hong Kong University of Science and Technology (Guangzhou)"
   uri              : # URL
