@@ -1,5 +1,8 @@
 ---
+
 permalink: /
+---
+layout: post
 title: "About Me"
 author_profile: true
 redirect_from: 
@@ -21,6 +24,8 @@ Recent News
 
 
 Publications
+
+
 ======
 <div class="pub">
       <div class="thumbnail">
