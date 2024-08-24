@@ -88,7 +88,6 @@
    card view
    ========================================================================== */
 
-/* 默认卡片样式，适用于桌面设备 */
 .card {
   border: 1px solid #e1e4e8;
   border-radius: 8px;
@@ -96,55 +95,64 @@
   margin-bottom: 20px;
   overflow: hidden;
   display: flex;
-  flex-direction: column;
-  width: 100%;
+  flex-direction: row; /* 左右布局 */
 }
 
-/* 调整卡片图片的样式 */
+.card-content {
+  display: flex;
+  flex-direction: row;
+}
+
+.card-image {
+  flex: 1;
+  max-width: 200px; /* 根据需要调整 */
+}
+
 .card-image img {
   width: 100%;
   height: auto;
+  display: block;
 }
 
-/* 卡片内容的样式 */
 .card-body {
+  flex: 2;
   padding: 15px;
 }
 
-/* 响应式设计：屏幕宽度小于 768px (如平板和手机) */
+.card-title {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.card-meta {
+  font-size: 0.9em;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.card-excerpt {
+  margin-bottom: 10px;
+}
+
+.card-links a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.card-links a:hover {
+  text-decoration: underline;
+}
+
+/* 响应式设计：调整在小屏幕上的显示 */
 @media (max-width: 768px) {
   .card {
-    flex-direction: column;
+    flex-direction: column; /* 在小屏幕上纵向布局 */
+  }
+
+  .card-image {
+    max-width: 100%;
   }
 }
-
-/* 响应式设计：屏幕宽度小于 576px (如小型手机) */
-@media (max-width: 576px) {
-  .card {
-    margin-bottom: 15px;
-  }
-
-  .card-body {
-    padding: 10px;
-  }
-
-  .card-title {
-    font-size: 1.2em;
-  }
-
-  .card-meta, .card-date {
-    font-size: 0.8em;
-  }
-
-  .card-excerpt {
-    font-size: 0.9em;
-  }
-
-  .card-links a {
-    font-size: 0.9em;
-  }
-}
-
 
 /*
    List view
