@@ -89,13 +89,11 @@
    ========================================================================== */
 
 .card {
-  border: 1px solid #e1e4e8;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  margin-bottom: 20px;
-  overflow: hidden;
   display: flex;
-  flex-direction: row; /* 左右布局 */
+  border: 1px solid #ddd;
+  margin: 10px;
+  border-radius: 8px;
+  overflow: hidden;
 }
 
 .card-content {
@@ -105,54 +103,29 @@
 
 .card-image {
   flex: 1;
-  max-width: 200px; /* 根据需要调整 */
+  padding: 10px;
 }
 
 .card-image img {
-  width: 100%;
+  max-width: 100%;
   height: auto;
-  display: block;
+  border-radius: 4px;
 }
 
 .card-body {
   flex: 2;
-  padding: 15px;
+  padding: 10px;
 }
 
 .card-title {
   font-size: 1.5em;
-  margin-bottom: 10px;
+  margin: 0;
 }
 
-.card-meta {
-  font-size: 0.9em;
-  color: #555;
-  margin-bottom: 10px;
+.card-meta, .card-date, .card-excerpt, .card-links {
+  margin-top: 10px;
 }
 
-.card-excerpt {
-  margin-bottom: 10px;
-}
-
-.card-links a {
-  color: #007bff;
-  text-decoration: none;
-}
-
-.card-links a:hover {
-  text-decoration: underline;
-}
-
-/* 响应式设计：调整在小屏幕上的显示 */
-@media (max-width: 768px) {
-  .card {
-    flex-direction: column; /* 在小屏幕上纵向布局 */
-  }
-
-  .card-image {
-    max-width: 100%;
-  }
-}
 
 /*
    List view
