@@ -84,6 +84,67 @@
   }
 }
 
+/*
+   card view
+   ========================================================================== */
+
+/* 默认卡片样式，适用于桌面设备 */
+.card {
+  border: 1px solid #e1e4e8;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+/* 调整卡片图片的样式 */
+.card-image img {
+  width: 100%;
+  height: auto;
+}
+
+/* 卡片内容的样式 */
+.card-body {
+  padding: 15px;
+}
+
+/* 响应式设计：屏幕宽度小于 768px (如平板和手机) */
+@media (max-width: 768px) {
+  .card {
+    flex-direction: column;
+  }
+}
+
+/* 响应式设计：屏幕宽度小于 576px (如小型手机) */
+@media (max-width: 576px) {
+  .card {
+    margin-bottom: 15px;
+  }
+
+  .card-body {
+    padding: 10px;
+  }
+
+  .card-title {
+    font-size: 1.2em;
+  }
+
+  .card-meta, .card-date {
+    font-size: 0.8em;
+  }
+
+  .card-excerpt {
+    font-size: 0.9em;
+  }
+
+  .card-links a {
+    font-size: 0.9em;
+  }
+}
+
 
 /*
    List view
