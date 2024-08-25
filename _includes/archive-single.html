@@ -11,53 +11,37 @@
 {% endif %}
 
 <style>
-  .card {
+ .card {
     display: flex;
     flex-direction: row;
     margin-bottom: 20px;
     border: 1px solid #ddd;
     border-radius: 8px;
     overflow: hidden;
-  }
+}
 
-  .card-image {
-    flex: 0 0 200px; /* Fixed width for image container */
-    height: 100px;    /* Fixed height for image container */
-    overflow: hidden;
-    background-image: url('/images/500x300.png'); /* Default image path */
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-  }
-
-  .card-image img {
-    width: 100%;
-    height: 100%; /* Ensure image covers the container */
-    object-fit: cover; /* Maintain aspect ratio and cover the container */
-  }
-
-  .card-body {
+.card-body {
     flex: 1;
     padding: 20px;
-  }
+}
 
-  .card-title {
+.card-title {
     margin: 0;
     font-size: 1.2em;
-  }
+}
 
-  .card-meta {
+.card-meta {
     font-size: 0.9em;
     color: #666;
-  }
+}
 
-  .card-excerpt {
+.card-excerpt {
     margin: 10px 0;
-  }
+}
 
-  .card-links {
+.card-links {
     margin-top: 10px;
-  }
+}
 </style>
 
 <div class="card">
