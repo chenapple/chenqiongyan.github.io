@@ -1,4 +1,5 @@
 ---
+tease: "/images/SilverCycling_thumbnail.jpg"
 title: "SilverCycling: Exploring the Impact of Bike-Based Locomotion on Spatial Orientation for Older Adults in VR"
 collection: publications
 category: conferences
