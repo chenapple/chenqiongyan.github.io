@@ -107,9 +107,9 @@
 }
 
 .card-image img {
-  max-width: 100%;
-  height: auto;
-  border-radius: 4px;
+  max-width: 100% !important;
+  height: auto !important;
+  border-radius: 4px !important;
 }
 
 .card-body {
