@@ -44,16 +44,16 @@
   <article class="card-content" itemscope itemtype="http://schema.org/CreativeWork">
     {% if thumbnail %}
       <div class="card-image">
-        <img src="{{ thumbnail }}" alt="Image for {{ title }}" onerror="this.style.display='none'; this.parentElement.style.backgroundImage='url(/images/500x300.png)'; this.parentElement.style.backgroundSize='cover'; this.parentElement.style.backgroundPosition='center';">
+        <img src="{{ thumbnail }}" alt="Image for {{ title }}" onerror="this.style.display='none'; this.parentElement.style.backgroundImage='url(/images/500x300.png)'">
       </div>
     {% else %}
-      <div class="card-image" style="background-image: url('/images/500x300.png'); background-size: cover; background-position: center;"></div>
+      <div class="card-image" style="background-image: url(/images/500x300.png);"></div> <!-- Default image -->
     {% endif %}
 
     <div class="card-body">
       <h2 class="card-title" itemprop="headline">
         {% if post.link %}
-          <a href="{{ post.link }}">{{ title }}</a> 
+          <a href="{{ post.link }}">{{ title }}</a>
           <a href="{{ base_path }}{{ post.url }}" rel="permalink">
             <i class="fa fa-link" aria-hidden="true" title="permalink"></i><span class="sr-only">Permalink</span>
           </a>
