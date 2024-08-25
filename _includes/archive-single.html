@@ -12,11 +12,68 @@
   {% assign title = post.title %}
 {% endif %}
 
+<style>
+  .card {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+
+  .card-image {
+    flex: 1;
+    max-width: 150px;
+    overflow: hidden;
+  }
+
+  .card-image img {
+    width: 100%;
+    height: auto;
+  }
+
+  .card-body {
+    flex: 2;
+    padding: 20px;
+  }
+
+  .card-title {
+    margin: 0;
+    font-size: 1.2em;
+  }
+
+  .card-meta {
+    font-size: 0.9em;
+    color: #666;
+  }
+
+  .card-excerpt {
+    margin: 10px 0;
+  }
+
+  .card-links {
+    margin-top: 10px;
+  }
+
+  /* Ensure responsiveness */
+  @media (max-width: 768px) {
+    .card {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    .card-image {
+      max-width: 100%;
+    }
+  }
+</style>
+
 <div class="card">
   <article class="card-content" itemscope itemtype="http://schema.org/CreativeWork">
     {% if post.header.teaser %}
       <div class="card-image">
-        <img src="{{ post.header.teaser }}" alt="">
+        <img src="{{ post.header.teaser }}" alt="Image for {{ post.title }}">
       </div>
     {% endif %}
 
@@ -52,57 +109,20 @@
         <a href="{{ base_path }}{{ post.url }}" rel="permalink"> Read more</a></strong></p>
       {% endif %}
 
-      {% if post.citation and post.paperurl and post.slidesurl %}
-        <p class="card-links">Recommended citation: {{ post.citation }}<br /><a href="{{ post.paperurl }}">Download Paper</a> | <a href="{{ post.slidesurl }}">Download Slides</a></p>
-      {% elsif post.citation and post.paperurl %}
-        <p class="card-links">Recommended citation: {{ post.citation }}<br /><a href="{{ post.paperurl }}">Download Paper</a></p>
-      {% elsif post.citation and post.slidesurl %}
-        <p class="card-links">Recommended citation: {{ post.citation }}<br /><a href="{{ post.slidesurl }}">Download Slides</a></p>
-      {% elsif post.citation %}
-        <p class="card-links">Recommended citation: {{ post.citation }}</p>
-      {% elsif post.paperurl %}
-        <p class="card-links"><a href="{{ post.paperurl }}">Download Paper</a></p>
-      {% elsif post.slidesurl %}
-        <p class="card-links"><a href="{{ post.slidesurl }}">Download Slides</a></p>
+      {% if post.citation or post.paperurl or post.slidesurl %}
+        <p class="card-links">
+          {% if post.citation %}
+            Recommended citation: {{ post.citation }}<br />
+          {% endif %}
+          {% if post.paperurl %}
+            <a href="{{ post.paperurl }}">Download Paper</a>
+          {% endif %}
+          {% if post.slidesurl %}
+            {% if post.paperurl %} | {% endif %}
+            <a href="{{ post.slidesurl }}">Download Slides</a>
+          {% endif %}
+        </p>
       {% endif %}
     </div>
   </article>
 </div>
-
-      {% if post.read_time %}
-        <p class="card-meta"><i class="fa fa-clock-o" aria-hidden="true"></i> {% include read-time.html %}</p>
-      {% endif %}
-
-      {% if post.collection == 'teaching' %}
-        <p>{{ post.type }}, <i>{{ post.venue }}</i>, {{ post.date | default: "1900-01-01" | date: "%Y" }}</p>
-      {% elsif post.collection == 'publications' %}
-        <p>Published in <i>{{ post.venue }}</i>, {{ post.date | default: "1900-01-01" | date: "%Y" }}</p>
-      {% elsif post.date %}
-        <p class="card-date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> {{ site.data.ui-text[site.locale].date_label | default: "Published:" }}</strong> 
-        <time datetime="{{ post.date | default: "1900-01-01" | date_to_xmlschema }}">{{ post.date | default: "1900-01-01" | date: "%B %d, %Y" }}</time></p>
-      {% endif %}
-
-      {% if post.excerpt and site.read_more != 'enabled' %}
-        <p class="card-excerpt" itemprop="description">{{ post.excerpt | markdownify }}</p>
-      {% elsif post.excerpt and site.read_more == 'enabled' %}
-        <p class="card-excerpt" itemprop="description">{{ post.excerpt | markdownify | remove: '<p>' | remove: '</p>' }}<strong>
-        <a href="{{ base_path }}{{ post.url }}" rel="permalink"> Read more</a></strong></p>
-      {% endif %}
-
-      {% if post.citation and post.paperurl and post.slidesurl %}
-        <p class="card-links">Recommended citation: {{ post.citation }}<br /><a href="{{ post.paperurl }}">Download Paper</a> | <a href="{{ post.slidesurl }}">Download Slides</a></p>
-      {% elsif post.citation and post.paperurl %}
-        <p class="card-links">Recommended citation: {{ post.citation }}<br /><a href="{{ post.paperurl }}">Download Paper</a></p>
-      {% elsif post.citation and post.slidesurl %}
-        <p class="card-links">Recommended citation: {{ post.citation }}<br /><a href="{{ post.slidesurl }}">Download Slides</a></p>
-      {% elsif post.citation %}
-        <p class="card-links">Recommended citation: {{ post.citation }}</p>
-      {% elsif post.paperurl %}
-        <p class="card-links"><a href="{{ post.paperurl }}">Download Paper</a></p>
-      {% elsif post.slidesurl %}
-        <p class="card-links"><a href="{{ post.slidesurl }}">Download Slides</a></p>
-      {% endif %}
-    </div>
-  </article>
-</div>
-
