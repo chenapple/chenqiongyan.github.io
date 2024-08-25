@@ -1,7 +1,7 @@
 {% include base_path %}
 
-{% if post.header.teaser %}
-  {% capture teaser %}{{ post.header.teaser }}{% endcapture %}
+{% if post.header.thumbnail %}
+  {% capture thumbnail %}{{ post.header.thumbnail }}{% endcapture %}
 {% endif %}
 
 {% if post.id %}
@@ -42,13 +42,18 @@
 .card-links {
     margin-top: 10px;
 }
+
+.card-image img {
+    width: 100%; /* Ensure the image fits within the container */
+    height: auto; /* Maintain aspect ratio */
+}
 </style>
 
 <div class="card">
   <article class="card-content" itemscope itemtype="http://schema.org/CreativeWork">
-    {% if teaser %}
+    {% if thumbnail %}
       <div class="card-image">
-        <img src="{{ teaser }}" alt="Image for {{ title }}" onerror="this.style.display='none'; this.parentElement.style.backgroundImage='url(/images/500x300.png)'">
+        <img src="{{ thumbnail }}" alt="Image for {{ title }}" onerror="this.style.display='none'; this.parentElement.style.backgroundImage='url(/images/500x300.png)'">
       </div>
     {% else %}
       <div class="card-image"></div> <!-- Empty div for default image -->
