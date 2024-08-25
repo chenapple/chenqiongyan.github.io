@@ -120,26 +120,30 @@
 /* Card content container */
 .card-body {
   flex: 1;
-  padding: 20px !important; /* Ensures padding is applied */
+  padding: 10px !important; /* Adjust padding */
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
 
+/* Ensure figcaption does not affect card */
+.card-body figcaption {
+  display: none !important; /* Hides figcaption if used */
+}
+
 /* Additional card styles */
 .card-title {
-  font-size: 1.6rem !important;
-  margin-bottom: 0.5rem !important;
+  font-size: 1.4rem !important; /* Adjust font size */
+  margin-bottom: 0.5rem !important; /* Adjust margin */
 }
 
 .card-meta, .card-date, .card-excerpt {
-  margin-bottom: 1rem !important;
+  margin-bottom: 0.5rem !important; /* Adjust margin */
 }
 
 .card-links {
-  margin-top: 1rem !important;
+  margin-top: 0.5rem !important; /* Adjust margin */
 }
-
 
 
 /*
