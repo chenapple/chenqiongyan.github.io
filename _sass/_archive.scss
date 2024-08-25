@@ -116,6 +116,14 @@
   transform: scale(1.2);
 }
 
+/* Card content container */
+.card-body {
+  flex: 1;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
 
 /*
    List view
