@@ -22,7 +22,8 @@
 
   .card-image {
     flex: 1;
-    max-width: 150px;
+    max-width: 200px; /* Updated max-width */
+    height: 100px;    /* Updated height */
     overflow: hidden;
     background-image: url('/images/500x300.png'); /* 默认图片路径 */
     background-size: cover;
@@ -68,6 +69,7 @@
 
     .card-image {
       max-width: 100%;
+      height: auto; /* Remove fixed height on small screens */
       background-image: none; /* Remove background image on small screens */
     }
   }
@@ -132,4 +134,3 @@
     </div>
   </article>
 </div>
-
