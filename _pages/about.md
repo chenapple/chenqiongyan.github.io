@@ -24,7 +24,7 @@ Publications
 ======
 <div class="pub">
       <div class="thumbnail">
-        <img src="/images/500x300.png" />
+        <img src="/images/SilverCycling_thumbnail.jpg" />
       </div>
       <div class="publications">
        <div> 
