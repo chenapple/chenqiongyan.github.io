@@ -84,6 +84,75 @@
   }
 }
 
+/*
+   Card view
+   ========================================================================== */
+
+.card {
+  display: flex; /* Use flexbox for layout */
+  flex-direction: row; /* Ensure horizontal layout */
+  margin-bottom: 2em;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 0.2rem 0.5rem #00000026; /* Add some shadow to the card */
+}
+
+/* Card image container */
+.card-image {
+  flex: 0 0 30%; /* Image container takes up 30% of the card's width */
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+/* Card image */
+.card-image img {
+  width: 100%; /* Ensure the image fills the container */
+  height: auto; /* Maintain aspect ratio */
+  display: block; /* Remove extra space below the image */
+  transition: transform 0.5s ease; /* Smooth scaling on hover */
+}
+
+.card-image img:hover {
+  transform: scale(1.2); /* Scale image on hover */
+}
+
+/* Card content container */
+.card-body {
+  flex: 1; /* Content area takes up the remaining space */
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* Card title */
+.card-title {
+  font-size: 1.6rem;
+  margin-bottom: 0.5rem;
+}
+
+/* Card meta information */
+.card-meta, .card-date, .card-excerpt {
+  margin-bottom: 1rem;
+}
+
+/* Card links */
+.card-links {
+  margin-top: 1rem;
+}
+
+/* Card hover effect */
+.card:hover .card-image {
+  box-shadow: 0 0 10px rgba(#000, 0.25);
+}
+
+.card:hover .card-title {
+  text-decoration: underline;
+}
+
+
 
 /*
    List view
