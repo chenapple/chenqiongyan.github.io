@@ -91,7 +91,9 @@
 /* Card container */
 .card {
   display: flex;
-  flex-direction: row; /* 确保内容是水平排列 */
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
   border: 1px solid #ddd;
   border-radius: 8px;
   overflow: hidden;
@@ -103,6 +105,7 @@
 /* Card image container */
 .card-image {
   flex: 0 0 30%; /* Adjust the width of the image container as needed */
+  align-items: center;
   max-width: 30%;
   background-size: cover;
   background-position: center;
@@ -111,10 +114,7 @@
 .card-image img {
   width: 100%;
   height: auto;
- display: flex;
- flex-direction: row;
- flex-wrap: wrap;
- align-items: center;
+  align-items: center;
   transition: transform 0.5s ease;
 }
 
