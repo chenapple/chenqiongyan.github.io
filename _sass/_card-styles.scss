@@ -1,16 +1,43 @@
 /* custom-styles.scss */
 
-.card-content {
-  display: flex; /* Use flexbox for horizontal layout */
-  flex-direction: row; /* Arrange items in a row */
-}
-
-.card-image {
-  flex: 0 0 30%; /* Adjust width as needed */
+/* Card container */
+.card {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
   align-items: center;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 0.2rem 0.5rem #00000026;
+  margin-bottom: 2em; 
+  width: 100%;
 }
 
+/* Card image container */
+.card-image {
+  flex: 0 0 30%; /* Adjust the width of the image container as needed */
+  align-items: center;
+  max-width: 30%;
+  background-size: cover;
+  background-position: center;
+}
+
+.card-image img {
+  width: 100%;
+  height: auto;
+  align-items: center;
+  transition: transform 0.5s ease;
+}
+
+.card-image img:hover {
+  transform: scale(1.2);
+}
+
+/* Card content container */
 .card-body {
   flex: 1;
   padding: 20px;
+  display: flex;
+  flex-direction: column;
 }
