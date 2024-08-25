@@ -16,6 +16,7 @@
 
 /* Card image container */
 .card-image {
+  display: flex;
   flex: 0 0 30%; /* Adjust the width of the image container as needed */
   align-items: center;
   max-width: 30%;
@@ -26,7 +27,6 @@
 .card-image img {
   width: 100%;
   height: auto;
-  align-items: center;
   transition: transform 0.5s ease;
 }
 
