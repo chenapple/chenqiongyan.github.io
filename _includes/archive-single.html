@@ -18,26 +18,26 @@
     border: 1px solid #ddd;
     border-radius: 8px;
     overflow: hidden;
-}
+  }
 
-.card-image {
-    flex: 1; /* Adjust this value to control the size of the image area */
+  .card-image {
+    flex: 0 0 30%; /* Make the image container take up 30% of the width */
     background-size: cover;
-    background-position: left;
-}
+    background-position: center;
+    position: relative;
+  }
 
-.card-image img {
-    width: 20%; /* Ensure the image fills the container */
+  .card-image img {
+    width: 100%; /* Ensure the image fills the container */
     height: auto; /* Maintain aspect ratio */
-}
+    display: block; /* Remove extra space below the image */
+  }
 
-.card-body {
-    flex: 1; /* Adjust this value to control the size of the text area */
+  .card-body {
+    flex: 1; /* The text area will take up the remaining space */
     padding: 20px;
-    background-position: right;
     overflow: hidden; /* Ensure the text content does not overflow */
-}
-
+  }
 </style>
 
 <div class="card">
