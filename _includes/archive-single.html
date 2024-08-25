@@ -1,3 +1,4 @@
+<!-- Ensure the base path is included for image URLs -->
 {% include base_path %}
 
 {% if post.header.thumbnail %}
@@ -70,6 +71,7 @@
       {% else %}
         <img src="/images/500x300.png" alt="Default Image">
       {% endif %}
+    </div>
 
     <div class="card-body">
       <h2 class="card-title" itemprop="headline">
