@@ -88,69 +88,63 @@
    Card view
    ========================================================================== */
 
+/* Card container */
 .card {
-  display: flex; /* Use flexbox for layout */
-  flex-direction: row; /* Ensure horizontal layout */
+  display: flex;
+  flex-direction: row;
   margin-bottom: 2em;
   border: 1px solid #ddd;
   border-radius: 8px;
   overflow: hidden;
-  box-shadow: 0 0.2rem 0.5rem #00000026; /* Add some shadow to the card */
+  box-shadow: 0 0.2rem 0.5rem #00000026;
 }
 
 /* Card image container */
 .card-image {
-  flex: 0 0 30%; /* Image container takes up 30% of the card's width */
+  flex: 0 0 30%;
   background-size: cover;
   background-position: center;
-  position: relative;
 }
 
-/* Card image */
 .card-image img {
-  width: 100%; /* Ensure the image fills the container */
-  height: auto; /* Maintain aspect ratio */
-  display: block; /* Remove extra space below the image */
-  transition: transform 0.5s ease; /* Smooth scaling on hover */
+  width: 100% !important; /* Ensures image fills container */
+  height: auto !important; /* Maintains aspect ratio */
+  display: block;
+  transition: transform 0.5s ease;
 }
 
 .card-image img:hover {
-  transform: scale(1.2); /* Scale image on hover */
+  transform: scale(1.2);
 }
 
 /* Card content container */
 .card-body {
-  flex: 1; /* Content area takes up the remaining space */
-  padding: 20px;
+  flex: 1;
+  padding: 20px !important; /* Ensures padding is applied */
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
 
-/* Card title */
+/* Ensure figcaption does not affect card */
+.card-body figcaption {
+  display: none !important; /* Hides figcaption if used */
+}
+
+/* Additional card styles */
 .card-title {
-  font-size: 1.6rem;
-  margin-bottom: 0.5rem;
+  font-size: 1.6rem !important;
+  margin-bottom: 0.5rem !important;
 }
 
-/* Card meta information */
 .card-meta, .card-date, .card-excerpt {
-  margin-bottom: 1rem;
+  margin-bottom: 1rem !important;
 }
 
-/* Card links */
 .card-links {
-  margin-top: 1rem;
+  margin-top: 1rem !important;
 }
 
-/* Card hover effect */
-.card:hover .card-image {
-  box-shadow: 0 0 10px rgba(#000, 0.25);
-}
-
-.card:hover .card-title {
-  text-decoration: underline;
-}
 
 
 
