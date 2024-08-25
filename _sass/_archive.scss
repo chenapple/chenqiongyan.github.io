@@ -89,43 +89,29 @@
    ========================================================================== */
 
 .card {
-  display: flex;
+  display: grid;
+  grid-template-columns: 150px auto; /* 图片列宽150px，内容列自动扩展 */
   border: 1px solid #ddd;
   margin: 10px;
   border-radius: 8px;
   overflow: hidden;
 }
 
-.card-content {
-  display: flex;
-  flex-direction: row;
-}
-
 .card-image {
-  flex: 1;
+  grid-column: 1; /* 图片区域位于第一列 */
   padding: 10px;
 }
 
 .card-image img {
-  max-width: 100% !important;
-  height: auto !important;
-  border-radius: 4px !important;
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
 }
 
 .card-body {
-  flex: 2;
+  grid-column: 2; /* 内容区域位于第二列 */
   padding: 10px;
 }
-
-.card-title {
-  font-size: 1.5em;
-  margin: 0;
-}
-
-.card-meta, .card-date, .card-excerpt, .card-links {
-  margin-top: 10px;
-}
-
 
 /*
    List view
