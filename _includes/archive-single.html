@@ -11,57 +11,6 @@
   {% assign title = post.title %}
 {% endif %}
 
-<style>
-  .card {
-    display: flex;
-    flex-direction: row; /* Ensure the card content is laid out in a row */
-    margin-bottom: 20px;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    overflow: hidden;
-    box-shadow: 0 0.2rem 0.5rem #00000026; /* Add some shadow to the card */
-  }
-
-  .card-image {
-    flex: 0 0 30%; /* Image container takes up 30% of the card's width */
-    background-size: cover;
-    background-position: center;
-    position: relative;
-  }
-
-  .card-image img {
-    width: 100%; /* Ensure the image fills the container */
-    height: auto; /* Maintain aspect ratio */
-    display: block; /* Remove extra space below the image */
-    transition: transform 0.5s ease; /* Smooth scaling on hover */
-  }
-
-  .card-image img:hover {
-    transform: scale(1.2); /* Scale image on hover */
-  }
-
-.card-body {
-  flex: 1; /* 使内容区域占用剩余空间 */
-  padding: 20px;
-  margin: 0; /* 取消外边距 */
-  width: auto; /* 设置为自动宽度以适应父容器 */
-  box-sizing: border-box; /* 包括内边距和边框在宽度和高度计算中 */
-}
-
-  .card-title {
-    font-size: 1.6rem;
-    margin-bottom: 0.5rem;
-  }
-
-  .card-meta, .card-date, .card-excerpt {
-    margin-bottom: 1rem;
-  }
-
-  .card-links {
-    margin-top: 1rem;
-  }
-</style>
-
 <div class="card">
   <article class="card-content" itemscope itemtype="http://schema.org/CreativeWork">
     <div class="card-image">
