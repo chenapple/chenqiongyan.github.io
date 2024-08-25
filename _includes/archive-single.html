@@ -24,11 +24,16 @@
     flex: 1;
     max-width: 150px;
     overflow: hidden;
+    background-image: url('/images/default-thumbnail.jpg'); /* 默认图片路径 */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
   }
 
   .card-image img {
     width: 100%;
     height: auto;
+    display: block;
   }
 
   .card-body {
@@ -63,6 +68,7 @@
 
     .card-image {
       max-width: 100%;
+      background-image: none; /* Remove background image on small screens */
     }
   }
 </style>
@@ -71,8 +77,10 @@
   <article class="card-content" itemscope itemtype="http://schema.org/CreativeWork">
     {% if teaser %}
       <div class="card-image">
-        <img src="{{ teaser }}" alt="Image for {{ title }}">
+        <img src="{{ teaser }}" alt="Image for {{ title }}" onerror="this.style.display='none'; this.parentElement.style.backgroundImage='url(/images/default-thumbnail.jpg)'">
       </div>
+    {% else %}
+      <div class="card-image"></div> <!-- Empty div for default image -->
     {% endif %}
 
     <div class="card-body">
@@ -124,3 +132,4 @@
     </div>
   </article>
 </div>
+
