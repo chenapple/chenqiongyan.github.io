@@ -20,23 +20,5 @@ Recent News
 * **Aug 2024**: My paper has been accepted by Ubicomp/IMWUT'24. I’m looking forward to connecting with you in Melbourne 🐨 from 7-9 October！
 
 
-Publications
-======
-<div class="pub">
-      <div class="thumbnail">
-        <img src="/images/SilverCycling_thumbnail.jpg" />
-      </div>
-      <div class="publications">
-       <div> 
-        <h3>Exploring the Opportunity of Augmented Reality (AR) in Supporting Older Adults Explore and Learn Smartphone Applications</h3>
-        </div>
-        <div class="author"><b>Xiaofu Jin</b>, Wai Tong, Xiaoying Wei, Xian Wang, Emily Kuang, Xiaoyu Mo, Huamin Qu, Mingming Fan</div>
-        <div>
-        <span class="venue">In ACM CHI (CHI'24)
-        </span>
-        </div>
-        <div><span class="venue"><a href="/_files/paper1.pdf">PDF  | </a></span></div>
-      </div>
-</div>
 
 
