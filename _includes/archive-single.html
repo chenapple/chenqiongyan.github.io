@@ -2,8 +2,6 @@
 
 {% if post.header.teaser %}
   {% capture teaser %}{{ post.header.teaser }}{% endcapture %}
-{% else %}
-  {% assign teaser = site.teaser %}
 {% endif %}
 
 {% if post.id %}
@@ -71,21 +69,21 @@
 
 <div class="card">
   <article class="card-content" itemscope itemtype="http://schema.org/CreativeWork">
-    {% if post.header.teaser %}
+    {% if teaser %}
       <div class="card-image">
-        <img src="{{ post.header.teaser }}" alt="Image for {{ post.title }}">
+        <img src="{{ teaser }}" alt="Image for {{ title }}">
       </div>
     {% endif %}
 
     <div class="card-body">
       <h2 class="card-title" itemprop="headline">
         {% if post.link %}
-          <a href="{{ post.link }}">{{ post.title }}</a> 
+          <a href="{{ post.link }}">{{ title }}</a> 
           <a href="{{ base_path }}{{ post.url }}" rel="permalink">
             <i class="fa fa-link" aria-hidden="true" title="permalink"></i><span class="sr-only">Permalink</span>
           </a>
         {% else %}
-          <a href="{{ base_path }}{{ post.url }}" rel="permalink">{{ post.title }}</a>
+          <a href="{{ base_path }}{{ post.url }}" rel="permalink">{{ title }}</a>
         {% endif %}
       </h2>
 
