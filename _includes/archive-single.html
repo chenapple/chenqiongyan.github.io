@@ -40,14 +40,13 @@
     transform: scale(1.2); /* Scale image on hover */
   }
 
-  .card-body {
-    flex: 1; /* Text area takes up the remaining space */
-    padding: 20px;
-    overflow: hidden; /* Ensure text content does not overflow */
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-  }
+.card-body {
+  flex: 1; /* 使内容区域占用剩余空间 */
+  padding: 20px;
+  margin: 0; /* 取消外边距 */
+  width: auto; /* 设置为自动宽度以适应父容器 */
+  box-sizing: border-box; /* 包括内边距和边框在宽度和高度计算中 */
+}
 
   .card-title {
     font-size: 1.6rem;
