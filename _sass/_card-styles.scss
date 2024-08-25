@@ -3,10 +3,12 @@
 .card-content {
   display: flex; /* Use flexbox for horizontal layout */
   flex-direction: row; /* Arrange items in a row */
+  
 }
 
 .card-image {
   flex: 0 0 30%; /* Adjust width as needed */
+  align-items: center;
 }
 
 .card-body {
