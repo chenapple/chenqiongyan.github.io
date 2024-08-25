@@ -1,5 +1,7 @@
 /* custom-styles.scss */
-
+article.card-content {
+    display: flex;
+}
 /* Card container */
 .card {
   display: flex;
