@@ -37,38 +37,21 @@
   }
 
   .card-body {
-    flex: 1;
+    flex: 2;
     padding: 20px;
     overflow: hidden; /* Ensure the text content does not overflow */
   }
 
-  .card-title {
-    margin: 0;
-    font-size: 1.2em;
-  }
-
-  .card-meta {
-    font-size: 0.9em;
-    color: #666;
-  }
-
-  .card-excerpt {
-    margin: 10px 0;
-  }
-
-  .card-links {
-    margin-top: 10px;
-  }
 </style>
 
 <div class="card">
   <article class="card-content" itemscope itemtype="http://schema.org/CreativeWork">
     {% if thumbnail %}
       <div class="card-image">
-        <img src="{{ thumbnail }}" alt="Image for {{ title }}" onerror="this.style.display='none'; this.parentElement.style.backgroundImage='url(/images/500x300.png)'">
+        <img src="{{ thumbnail }}" alt="Image for {{ title }}" onerror="this.style.display='none'; this.parentElement.style.backgroundImage='url(/images/500x300.png)'; this.parentElement.style.backgroundSize='cover'; this.parentElement.style.backgroundPosition='center';">
       </div>
     {% else %}
-      <div class="card-image"></div> <!-- Empty div for default image -->
+      <div class="card-image" style="background-image: url('/images/500x300.png'); background-size: cover; background-position: center;"></div>
     {% endif %}
 
     <div class="card-body">
