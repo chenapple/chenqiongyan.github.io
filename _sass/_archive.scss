@@ -91,58 +91,11 @@
 /* Card container */
 .card {
   display: flex;
-  flex-direction: row;
-  margin-bottom: 2em;
   border: 1px solid #ddd;
   border-radius: 8px;
   overflow: hidden;
   box-shadow: 0 0.2rem 0.5rem #00000026;
-}
-
-/* Card image container */
-.card-image {
-  flex: 0 0 30%;
-  background-size: cover;
-  background-position: center;
-}
-
-.card-image img {
-  width: 100% !important; /* Ensures image fills container */
-  height: auto !important; /* Maintains aspect ratio */
-  display: block;
-  transition: transform 0.5s ease;
-}
-
-.card-image img:hover {
-  transform: scale(1.2);
-}
-
-/* Card content container */
-.card-body {
-  flex: 1;
-  padding: 10px !important; /* Adjust padding */
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
-/* Ensure figcaption does not affect card */
-.card-body figcaption {
-  display: none !important; /* Hides figcaption if used */
-}
-
-/* Additional card styles */
-.card-title {
-  font-size: 1.4rem !important; /* Adjust font size */
-  margin-bottom: 0.5rem !important; /* Adjust margin */
-}
-
-.card-meta, .card-date, .card-excerpt {
-  margin-bottom: 0.5rem !important; /* Adjust margin */
-}
-
-.card-links {
-  margin-top: 0.5rem !important; /* Adjust margin */
+  margin-bottom: 2em;
 }
 
 
