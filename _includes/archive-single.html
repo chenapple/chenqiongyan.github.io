@@ -64,13 +64,12 @@
 
 <div class="card">
   <article class="card-content" itemscope itemtype="http://schema.org/CreativeWork">
-    {% if thumbnail %}
-      <div class="card-image">
-        <img src="{{ thumbnail }}" alt="Image for {{ title }}" onerror="this.style.display='none'; this.parentElement.style.backgroundImage='url(/images/500x300.png)'">
-      </div>
-    {% else %}
-      <div class="card-image" style="background-image: url(/images/500x300.png);"></div> <!-- Default image -->
-    {% endif %}
+    <div class="card-image">
+      {% if thumbnail %}
+        <img src="{{ thumbnail }}" alt="Image for {{ title }}">
+      {% else %}
+        <img src="/images/500x300.png" alt="Default Image">
+      {% endif %}
 
     <div class="card-body">
       <h2 class="card-title" itemprop="headline">
