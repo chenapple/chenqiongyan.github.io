@@ -126,11 +126,6 @@
   justify-content: space-between;
 }
 
-/* Ensure figcaption does not affect card */
-.card-body figcaption {
-  display: none !important; /* Hides figcaption if used */
-}
-
 /* Additional card styles */
 .card-title {
   font-size: 1.6rem !important;
@@ -144,7 +139,6 @@
 .card-links {
   margin-top: 1rem !important;
 }
-
 
 
 
