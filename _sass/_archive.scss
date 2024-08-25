@@ -89,34 +89,8 @@
    ========================================================================== */
 
 .card {
- /* display: grid;
-  grid-template-columns: 150px auto;  */ 
-  border: 1px solid #ddd;
-  margin: 10px;
-  border-radius: 8px;
-  overflow: hidden;
-}
-
-.card-image {
-  grid-column: 1; /* 图片区域位于第一列 */
-  padding: 10px;
-}
-
-.card-image img {
-  width: 100%;
-  height: auto;
-  border-radius: 4px;
-}
-
-.card-body {
-  grid-column: 2; /* 内容区域位于第二列 */
-  padding: 10px;
-}
-*/
-
-.card {
   display: flex;
-  flex-direction: row; /* 确保水平布局 */
+  flex-direction: row;
   margin-bottom: 20px;
   border: 1px solid #ddd;
   border-radius: 8px;
@@ -124,9 +98,8 @@
 }
 
 .card-image {
-  flex: 0 0 200px; /* 固定图片区域宽度 */
-  height: 100px;    /* 固定图片区域高度 */
-  overflow: hidden;
+  flex: 1;
+  max-width: 200px; /* 修改为所需宽度 */
   background-image: url('/images/500x300.png'); /* 默认图片路径 */
   background-size: cover;
   background-position: center;
@@ -135,46 +108,16 @@
 
 .card-image img {
   width: 100%;
-  height: 100%; /* 确保图片覆盖整个容器 */
-  object-fit: cover; /* 确保图片保持比例 */
+  height: auto;
+  display: block;
 }
 
 .card-body {
-  flex: 1; /* 内容区域扩展 */
+  flex: 2;
   padding: 20px;
 }
 
-.card-title {
-  margin: 0;
-  font-size: 1.2em;
-}
 
-.card-meta {
-  font-size: 0.9em;
-  color: #666;
-}
-
-.card-excerpt {
-  margin: 10px 0;
-}
-
-.card-links {
-  margin-top: 10px;
-}
-
-/* Ensure responsiveness */
-@media (max-width: 768px) {
-  .card {
-    flex-direction: column; /* Small screens: Stack vertically */
-    align-items: flex-start;
-  }
-
-  .card-image {
-    width: 100%; /* Full width for image on small screens */
-    height: auto; /* Auto height for image on small screens */
-    background-image: none; /* Remove default background image on small screens */
-  }
-}
 /*
    List view
    ========================================================================== */
