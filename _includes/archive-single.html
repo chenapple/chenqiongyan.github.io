@@ -12,7 +12,7 @@
   {% assign title = post.title %}
 {% endif %}
 
-<div class="card">
+<div class="{{ include.type | default: 'list' }}__item card">
   <article class="card-content" itemscope itemtype="http://schema.org/CreativeWork">
     {% assign type = include.type | default: 'card' %}
     {% if type == 'card' %}
