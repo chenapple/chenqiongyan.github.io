@@ -98,6 +98,24 @@
   margin-bottom: 2em;
 }
 
+/* Card image container */
+.card-image {
+  flex: 0 0 30%; /* Adjust the width of the image container as needed */
+  background-size: cover;
+  background-position: center;
+}
+
+.card-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: transform 0.5s ease;
+}
+
+.card-image img:hover {
+  transform: scale(1.2);
+}
+
 
 /*
    List view
