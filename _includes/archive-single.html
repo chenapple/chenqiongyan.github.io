@@ -14,13 +14,13 @@
 
 <div class="{{ include.type | default: "list" }}__item card">
   <article class="card-content" itemscope itemtype="http://schema.org/CreativeWork">
-    {% if include.type == "card" and teaser %}
+    {% if include.type == "card" %}
       <div class="card-image">
         <img src=
-          {% if teaser contains "://" %}
+          {% if teaser and teaser contains "://" %}
             "{{ teaser }}"
           {% else %}
-            "{{ teaser | prepend: "/images/" | prepend: base_path }}"
+            "{% if teaser %}{{ teaser | prepend: "/images/" | prepend: base_path }}{% else %}/images/500x300.png{% endif %}"
           {% endif %}
           alt="Teaser Image">
       </div>
