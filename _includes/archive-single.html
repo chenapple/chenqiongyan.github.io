@@ -21,11 +21,10 @@
   }
 
   .card-image {
-    flex: 1;
-    max-width: 200px; /* Updated max-width */
-    height: 100px;    /* Updated height */
+    flex: 0 0 200px; /* Fixed width for image container */
+    height: 100px;    /* Fixed height for image container */
     overflow: hidden;
-    background-image: url('/images/500x300.png'); /* 默认图片路径 */
+    background-image: url('/images/500x300.png'); /* Default image path */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -33,12 +32,12 @@
 
   .card-image img {
     width: 100%;
-    height: auto;
-    display: block;
+    height: 100%; /* Ensure image covers the container */
+    object-fit: cover; /* Maintain aspect ratio and cover the container */
   }
 
   .card-body {
-    flex: 2;
+    flex: 1;
     padding: 20px;
   }
 
@@ -58,20 +57,6 @@
 
   .card-links {
     margin-top: 10px;
-  }
-
-  /* Ensure responsiveness */
-  @media (max-width: 768px) {
-    .card {
-      flex-direction: column;
-      align-items: flex-start;
-    }
-
-    .card-image {
-      max-width: 100%;
-      height: auto; /* Remove fixed height on small screens */
-      background-image: none; /* Remove background image on small screens */
-    }
   }
 </style>
 
