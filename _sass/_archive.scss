@@ -91,17 +91,19 @@
 /* Card container */
 .card {
   display: flex;
-  flex-direction: row;!important /* 确保内容是水平排列 */
+  flex-direction: row; /* 确保内容是水平排列 */
   border: 1px solid #ddd;
   border-radius: 8px;
   overflow: hidden;
   box-shadow: 0 0.2rem 0.5rem #00000026;
-  margin-bottom: 2em;
+  margin-bottom: 2em; 
+  width: 100%;
 }
 
 /* Card image container */
 .card-image {
   flex: 0 0 30%; /* Adjust the width of the image container as needed */
+  max-width: 30%;
   background-size: cover;
   background-position: center;
 }
