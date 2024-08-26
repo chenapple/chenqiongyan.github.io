@@ -7,7 +7,7 @@ article.card-content {
 /* Card image container */
 .card-image {
   flex: 0 0 30%; /* 保持图片容器的宽度 */
-  margin-left: 20px; /* 增加或减少这个值以调整左边距 */
+  padding: 20px;
   align-items: center;
   max-width: 30%;
   background-size: cover;
