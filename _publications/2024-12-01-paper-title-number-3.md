@@ -8,7 +8,7 @@ permalink: /publication/2024-12-01-paper-title-number-3
 excerpt: null
 date: 2024-12-15
 venue: ACM VINCI
-paperurl: https://github.com/chenqiongyan/chenqiongyan.github.io/blob/01de1dc93e60f13192f6a885cfb189647873c64a/files/paper3.pdf
+paperurl: https://chenqiongyan.github.io/files/paper3.pdf
 citation: "Lei Han, Yu Zhou, Qiongyan Chen, and David Yip. 2024. Memory Remedy:
 An AI-Enhanced Interactive Story Exploring Human-Robot Interaction and
 Companionship. In The 17th International Symposium on Visual Information
