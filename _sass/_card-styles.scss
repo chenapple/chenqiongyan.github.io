@@ -4,29 +4,20 @@ article.card-content {
     
 }
 
-/* Card container */
-.card {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  align-items: center;
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  overflow: hidden;
-  box-shadow: 0 0.2rem 0.5rem #00000026;
-  margin-bottom: 2em; 
-  width: 100%;
-}
-
 /* Card image container */
 .card-image {
-  display: flex;
-  flex: 0 0 30%; /* Adjust the width of the image container as needed */
-  margin-left: 10px;
+  flex: 0 0 30%; /* 保持图片容器的宽度 */
+  margin-left: 20px; /* 增加或减少这个值以调整左边距 */
   align-items: center;
   max-width: 30%;
   background-size: cover;
   background-position: center;
+}
+
+.card-image img {
+  width: 100%;
+  height: auto;
+  transition: transform 0.5s ease;
 }
 
 .card-image img {
