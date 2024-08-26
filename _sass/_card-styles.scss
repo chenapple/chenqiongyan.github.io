@@ -1,12 +1,14 @@
 /* custom-styles.scss */
 article.card-content {
     display: flex;
+    align-items: center;
     
 }
 
 /* Card container */
 .card {
   display: flex;
+  align-items: center;
   flex-direction: row;
   flex-wrap: wrap;
   border: 1px solid #ddd;
