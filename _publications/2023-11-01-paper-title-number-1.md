@@ -4,7 +4,7 @@ title: Toward Leveraging Augmented Reality (AR) for Enhancing Remote
   Intergenerational Communication in Cooking Scenarios
 collection: publications
 category: conferences
-permalink: https://doi.org/10.1145/3629606.3629658
+permalink: /publication/2023-11-01-paper-title-number-1
 excerpt: null
 date: 2023-11-01
 venue: Chinese CHI 2023
