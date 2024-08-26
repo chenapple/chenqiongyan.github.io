@@ -8,7 +8,7 @@ permalink: /publication/2024-09-01-paper-title-number-2
 excerpt: null
 date: 2024-09-01
 venue: ACM Ubicomp
-paperurl: https://github.com/chenqiongyan/chenqiongyan.github.io/blob/c0706b47415f22f0e023712fe36c9788385a6238/files/paper2.pdf
+paperurl: https://chenqiongyan.github.io/files/paper2.pdf
 citation: "Qiongyan CHEN, Zhiqing WU, Yucheng LIU, Lei Han, Zisu LI, Ge Lin KAN,
   and Mingming Fan. 2024. SilverCycling: Exploring the Impact of Bike-Based
   Locomotion on Spatial Orientation for Older Adults in VR. Proc. ACM Interact.
