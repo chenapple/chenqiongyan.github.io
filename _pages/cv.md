@@ -27,17 +27,17 @@ Work experience
 Skills
 ======
 * Language：
-  English: IELTS (6.5) / Mandarin: Chinese Mandarin Proficiency Test (Level 2B)
-  Cantonese: Medium / Hakka: Native
+  English: IELTS (6.5)/ Mandarin: Chinese Mandarin Proficiency Test (Level 2B)
+  Cantonese: Medium/ Hakka: Native
 * Software：
   Design: Adobe PS AI PR AE/ Figma/ Corel Draw/ Auto CAD/ Procreate  
-  Development: Android Studio / Kinect/ Unity 3D (e.g. VR)
+  Development: Android Studio/ Kinect/ Unity 3D (e.g. VR)
   Office: Excel/ PowerPoint/ Word 
   Analysis: SPSS/ MATLAB 
 * Training：
   fNIRS Analysis (2024)
   Art Therapy (2023 International Symposium on Art Therapy and the First Conference of the Art Psychology 
-  Professional Committee of the Shanghai Psychological Society / 2018 Zhang Jun Dance Therapy Workshop) 
+  Professional Committee of the Shanghai Psychological Society/ 2018 Zhang Jun Dance Therapy Workshop) 
   Minnan Tea Ceremony (2019-2020 Zhang Sha)
 
 Publications
