@@ -9,7 +9,6 @@ article.card-content {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  align-items: center;
   border: 1px solid #ddd;
   border-radius: 8px;
   overflow: hidden;
@@ -21,7 +20,6 @@ article.card-content {
 .card-image {
   flex: 0 0 30%; /* 保持图片容器的宽度 */
   padding: 20px;
-  align-items: center;
   max-width: 30%;
   background-size: cover;
   background-position: center;
@@ -33,13 +31,6 @@ article.card-content {
   transition: transform 0.5s ease;
 }
 
-
-.card-image img {
-  width: 100%;
-  height: auto;
-  margin-left: 10px;
-  transition: transform 0.5s ease;
-}
 
 .card-image img:hover {
   transform: scale(1.2);
