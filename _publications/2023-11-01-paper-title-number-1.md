@@ -1,3 +1,4 @@
+
 ---
 teaser: "/images/Cooking_thumbnail.jpg"
 title: "Toward Leveraging Augmented Reality (AR) for Enhancing Remote Intergenerational Communication in Cooking Scenarios"
