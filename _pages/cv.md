@@ -11,35 +11,34 @@ redirect_from:
 
 Education
 ======
-/* Ph.D in Version Control Theory, GitHub University, 2018 (expected) */
-* CMA MPhil in the Hongkong University of Science and Technology (Guangzhou), 2024
-* BEng. in Sun Yat-sen University, 2018
+* 2024: MPhil in CMA, in the Hongkong University of Science and Technology (Guangzhou)
+* 2018: BEng. in Biomedical Engineering, in Sun Yat-sen University, 2018
 
 Work experience
 ======
-* Spring 2024: Academic Pages Collaborator
-  * Github University
-  * Duties includes: Updates and improvements to template
-  * Supervisor: The Users
+* 2018-2022: Manager & Designer 
+  * Guangzhou Heartlaxy Co., Ltd. (My start-up company)
+  * Duties includes: Project Negotiation, Management, Design, and Execution
 
-* Fall 2015: Research Assistant
-  * Github University
-  * Duties included: Merging pull requests
-  * Supervisor: Professor Hub
-
-* Summer 2015: Research Assistant
-  * Github University
-  * Duties included: Tagging issues
-  * Supervisor: Professor Git
+* 2018-2022: Part-time Acitivity Planner
+  * Guangzhou PsyCorner Co., Ltd.
+  * Duties included: Mental Health related group activity design and execution, including emotion management, interpersonal relationships, personal growth, career planning, teamwork, etc.  
   
 Skills
 ======
-* Skill 1
-* Skill 2
-  * Sub-skill 2.1
-  * Sub-skill 2.2
-  * Sub-skill 2.3
-* Skill 3
+* Language：
+  English: IELTS (6.5) / Mandarin: Chinese Mandarin Proficiency Test (Level 2B)
+  Cantonese: Medium / Hakka: Native
+* Software：
+  Design: Adobe PS AI PR AE/ Figma/ Corel Draw/ Auto CAD/ Procreate  
+  Development: Android Studio / Kinect/ Unity 3D (e.g. VR)
+  Office: Excel/ PowerPoint/ Word 
+  Analysis: SPSS/ MATLAB 
+* Training：
+  fNIRS Analysis (2024)
+  Art Therapy (2023 International Symposium on Art Therapy and the First Conference of the Art Psychology 
+  Professional Committee of the Shanghai Psychological Society / 2018 Zhang Jun Dance Therapy Workshop) 
+  Minnan Tea Ceremony (2019-2020 Zhang Sha)
 
 Publications
 ======
@@ -47,6 +46,7 @@ Publications
     {% include archive-single-cv.html %}
   {% endfor %}</ul>
   
+<!--    
 Talks
 ======
   <ul>{% for post in site.talks reversed %}
@@ -62,3 +62,4 @@ Teaching
 Service and leadership
 ======
 * Currently signed in to 43 different slack teams
+-->
