@@ -21,7 +21,8 @@ article.card-content {
 
 .card-image {
   flex: 0 0 30%; /* 保持图片容器的宽度 */
-  padding: 20px;
+  margin-left: 30px;
+  margin-right:10px;
   max-width: 30%;
   background-size: cover;
   background-position: center;
