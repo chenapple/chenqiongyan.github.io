@@ -17,13 +17,7 @@
     {% assign type = include.type | default: 'card' %}
     {% if type == 'card' %}
       <div class="card-image">
-        <img src=
-          {% if teaser and teaser contains '://' %}
-            "{{ teaser }}"
-          {% else %}
-            "{% if teaser %}{{ teaser | prepend: '/images/' | prepend: base_path }}{% else %}/images/500x300.png{% endif %}"
-          {% endif %}
-          alt="Teaser Image">
+         <img src="{{ post.teaser | default: '/images/500x300.png' }}" alt="Teaser Image">
       </div>
     {% endif %}
 
