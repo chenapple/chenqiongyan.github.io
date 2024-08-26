@@ -1,7 +1,9 @@
 /* custom-styles.scss */
 article.card-content {
     display: flex;
+    
 }
+
 /* Card container */
 .card {
   display: flex;
@@ -42,4 +44,8 @@ article.card-content {
   padding: 20px;
   display: flex;
   flex-direction: column;
+}
+
+.card-content {
+    font-size: 14px; /* 适用于卡片内容 */
 }
