@@ -12,7 +12,7 @@ redirect_from:
 Education
 ======
 * 2024: MPhil in CMA, in the Hongkong University of Science and Technology (Guangzhou)
-* 2018: BEng. in Biomedical Engineering, in Sun Yat-sen University, 2018
+* 2018: BEng. in Biomedical Engineering, in Sun Yat-sen University
 
 Work experience
 ======
