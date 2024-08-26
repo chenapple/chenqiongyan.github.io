@@ -8,7 +8,7 @@ permalink: /publication/2023-11-01-paper-title-number-1
 excerpt: null
 date: 2023-11-01
 venue: Chinese CHI
-paperurl: http://academicpages.github.io/files/paper1.pdf
+paperurl: https://github.com/chenqiongyan/chenqiongyan.github.io/blob/f8ee6fc2bc4e4c178f9b0fb82fe57f21a7c6fe1b/files/paper1.pdf
 citation: Yuru Huang, Liyi Xu, You Zhou, Qiongyan Chen, Zhiqing Wu, Li Feng, and
   Mingming Fan. 2024. Toward Leveraging Augmented Reality (AR) for Enhancing
   Remote Intergenerational Communication in Cooking Scenarios. In Proceedings of
