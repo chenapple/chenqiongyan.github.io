@@ -1,5 +1,5 @@
 ---
-teaser: "images/bio-photo-2.jpg"
+teaser: "https://raw.githubusercontent.com/chenqiongyan/chenqiongyan.github.io/master/images/SilverCycling_thumbnail.jpg"
 title: "SilverCycling: Exploring the Impact of Bike-Based Locomotion on Spatial Orientation for Older Adults in VR"
 collection: publications
 category: conferences
